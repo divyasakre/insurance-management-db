@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Insurance Management Database · Live SQL Playground</title>
+  <meta name="description" content="A 17-table MySQL insurance database (customers, policies, claims, payments) with stored procedures, triggers and a scheduled event. Run it live in your browser.">
+  <meta property="og:title" content="Insurance Management Database · Live SQL Playground">
+  <meta property="og:description" content="17-table MySQL design with stored procedures, triggers and analytics queries, running live in the browser.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f2a4a'/><path d='M16 6l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V9z' fill='%234fd1c5'/></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">
+      <div>
+        <h1>Insurance Management Database</h1>
+        <div class="sub">UT Dallas · BUAN 6320 Database Foundations · Live SQL playground running in your browser</div>
+      </div>
+      <div class="top-actions">
+        <a class="btn ghost-dark" id="gh-link" href="https://github.com/divyasakre/insurance-management-db" target="_blank" rel="noopener">View code on GitHub</a>
+        <button class="btn ghost-dark" id="reset-btn" title="Rebuild the database from scratch">Reset database</button>
+      </div>
+    </div>
+    <div class="stats" id="stats">
+      <span class="stat-chip"><b>MySQL 8</b> source</span>
+      <span class="stat-chip"><b>17</b> tables + 5 log/audit</span>
+      <span class="stat-chip"><b>9</b> stored procedures</span>
+      <span class="stat-chip"><b>7</b> functions</span>
+      <span class="stat-chip"><b>10</b> triggers</span>
+      <span class="stat-chip"><b>1</b> scheduled event · <b>1</b> view</span>
+      <span class="stat-chip"><b>13</b> analytics queries</span>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-view="overview" class="active">Overview</button>
+      <button data-view="customer">Customer portal</button>
+      <button data-view="agent">Agent desk</button>
+      <button data-view="admin">Admin console</button>
+      <button data-view="queries">13 business queries</button>
+      <button data-view="editor">SQL editor</button>
+      <button data-view="schema">Schema &amp; code</button>
+    </nav>
+  </div>
+</header>
+
+<main id="app">
+  <div class="loading" id="loading">Loading the database engine…</div>
+  <section class="view active" id="view-overview"></section>
+  <section class="view" id="view-customer"></section>
+  <section class="view" id="view-agent"></section>
+  <section class="view" id="view-admin"></section>
+  <section class="view" id="view-queries"></section>
+  <section class="view" id="view-editor"></section>
+  <section class="view" id="view-schema"></section>
+</main>
+
+<footer>
+  The database runs entirely in your browser (SQLite compiled to WebAssembly via
+  <a href="https://github.com/sql-js/sql.js" target="_blank" rel="noopener">sql.js</a>). Nothing is sent to a server, and
+  <b>Reset database</b> restores the original data. The source of truth is the MySQL code in
+  <a href="https://github.com/divyasakre/insurance-management-db/tree/main/sql" target="_blank" rel="noopener">/sql</a>.
+  All people and data are fictional.
+</footer>
+<div class="toast" id="toast"></div>
+
+<script src="assets/vendor/sql-wasm.js"></script>
+<script src="assets/engine.js"></script>
+<script src="assets/queries.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
