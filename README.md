@@ -25,28 +25,9 @@ Course project · The University of Texas at Dallas, Jindal School of Management
 
 ## Schema
 
-```mermaid
-erDiagram
-  User_Roles ||--o{ Users : "role"
-  Users ||--o| Customers : "is a"
-  Users ||--o| Agents : "is a"
-  Branches ||--o{ Agents : "employs"
-  Agents ||--o{ Agent_Customers : ""
-  Customers ||--o{ Agent_Customers : ""
-  Policy_Types ||--o{ Insurance_Policies : "type"
-  Agents ||--o{ Insurance_Policies : "sells"
-  Customers ||--o{ Customer_Policies : ""
-  Insurance_Policies ||--o{ Customer_Policies : ""
-  Insurance_Policies ||--o{ Claims : "claimed on"
-  Claim_Statuses ||--o{ Claims : "status"
-  Claims ||--o{ Policy_Claims_Documents : "supported by"
-  Customer_Policies ||--o{ Payments : "paid via"
-  Payment_Methods ||--o{ Payments : "method"
-  Customers ||--o{ Feedback : "gives"
-  Customers ||--o{ Beneficiaries : "names"
-  Insurance_Policies ||--o{ Beneficiaries : "covers"
-  Users ||--o{ Logs : "acts"
-```
+[![Entity-relationship diagram](docs/assets/er-diagram.svg)](docs/assets/er-diagram.svg)
+
+The 17 core tables, grouped by area, with primary (PK), foreign (FK) and unique (UQ) keys. Four audit tables and `Policy_Deletion_Log` sit alongside them; they have no foreign keys and are filled by triggers. The diagram is generated from the live schema by [`tools/gen_erd.py`](tools/gen_erd.py).
 
 Design choices worth noting:
 - **Users are split into roles.** `Users` holds login and identity data, and `Customers` / `Agents` extend it one-to-one, so a person is never stored twice.
@@ -126,6 +107,7 @@ docs/                      GitHub Pages site (the playground)
 tools/
   gen_seed.py              regenerates the sample data
   build_site.sh            copies /sql into the site
+  gen_erd.py               draws the ER diagram from the live schema (Graphviz)
 ```
 
 ## Post-course improvements

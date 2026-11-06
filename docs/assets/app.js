@@ -720,7 +720,7 @@ ORDER BY loss_ratio_pct DESC;`],
     $("#view-schema").innerHTML = `
       <div class="section-head"><div><h2>Schema &amp; code</h2>
         <p>The entity-relationship diagram, every programmable object, and the full MySQL source.</p></div></div>
-      <div class="panel"><h3>Entity-relationship diagram</h3><p class="hint">17 core tables. The 4 audit tables and Policy_Deletion_Log are filled by triggers.</p>
+      <div class="panel"><h3>Entity-relationship diagram</h3><p class="hint">The 17 core tables, grouped by area. Each line runs from a primary key (||) to the foreign key that references it (o&lt; = many). Not shown: the 4 audit tables and Policy_Deletion_Log, which are standalone and filled by triggers. Click the diagram to open it full size.</p>
         <div class="mermaid" id="er"><a href="assets/er-diagram.svg" target="_blank" rel="noopener" title="Open full size"><img src="assets/er-diagram.svg" alt="Entity-relationship diagram of the insurance database" style="width:100%;height:auto;display:block"></a></div></div>
       <div class="panel" style="margin-top:16px"><h3>Procedures, functions, triggers, event &amp; view</h3>
         <div class="table-wrap" style="max-height:none"><table class="data objects-table"><thead><tr><th>Name</th><th>Type</th><th>What it does</th><th></th></tr></thead><tbody>

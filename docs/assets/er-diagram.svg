@@ -1,1 +1,596 @@
-<svg id="erd" width="1713.65234375" xmlns="http://www.w3.org/2000/svg" class="erDiagram" height="1025" viewBox="0 0 1713.65234375 1025" role="graphics-document document" aria-roledescription="er"><style>#erd{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#erd .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#erd .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#erd .error-icon{fill:#552222;}#erd .error-text{fill:#552222;stroke:#552222;}#erd .edge-thickness-normal{stroke-width:1px;}#erd .edge-thickness-thick{stroke-width:3.5px;}#erd .edge-pattern-solid{stroke-dasharray:0;}#erd .edge-thickness-invisible{stroke-width:0;fill:none;}#erd .edge-pattern-dashed{stroke-dasharray:3;}#erd .edge-pattern-dotted{stroke-dasharray:2;}#erd .marker{fill:#666;stroke:#666;}#erd .marker.cross{stroke:#666;}#erd svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#erd p{margin:0;}#erd .entityBox{fill:#eee;stroke:#999;}#erd .relationshipLabelBox{fill:hsl(-160, 0%, 93.3333333333%);opacity:0.7;background-color:hsl(-160, 0%, 93.3333333333%);}#erd .relationshipLabelBox rect{opacity:0.5;}#erd .labelBkg{background-color:rgba(237.9999999999, 237.9999999999, 237.9999999999, 0.5);}#erd .edgeLabel{background-color:white;}#erd .edgeLabel .label rect{fill:white;}#erd .edgeLabel .label text{fill:#000000;}#erd .edgeLabel .label{fill:#999;font-size:14px;}#erd .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#erd .edge-pattern-dashed{stroke-dasharray:8,8;}#erd .node rect,#erd .node circle,#erd .node ellipse,#erd .node polygon{fill:#eee;stroke:#999;stroke-width:1px;}#erd .relationshipLine{stroke:#666;stroke-width:1px;fill:none;}#erd .marker{fill:none!important;stroke:#666!important;stroke-width:1;}#erd [data-look=neo].labelBkg{background-color:rgba(237.9999999999, 237.9999999999, 237.9999999999, 0.5);}#erd .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#erd .cluster text{fill:#333;}#erd .cluster-label text{fill:#333;}#erd .node .neo-node{stroke:#999;}#erd [data-look="neo"].node rect,#erd [data-look="neo"].cluster rect,#erd [data-look="neo"].node polygon{stroke:url(#erd-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#erd [data-look="neo"].swimlane.cluster rect{filter:none;}#erd [data-look="neo"].node path{stroke:url(#erd-gradient);stroke-width:1px;}#erd [data-look="neo"].node .outer-path{filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#erd [data-look="neo"].node .neo-line path{stroke:#999;filter:none;}#erd [data-look="neo"].node circle{stroke:url(#erd-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#erd [data-look="neo"].node circle .state-start{fill:#000000;}#erd [data-look="neo"].icon-shape .icon{fill:url(#erd-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#erd [data-look="neo"].icon-shape .icon-neo path{stroke:url(#erd-gradient);filter:drop-shadow( 1px 2px 2px rgba(185,185,185,1));}#erd :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><defs><marker id="erd_er-onlyOneStart" class="marker onlyOne er" refX="0" refY="9" markerWidth="18" markerHeight="18" orient="auto"><path d="M9,0 L9,18 M15,0 L15,18"></path></marker></defs><defs><marker id="erd_er-onlyOneEnd" class="marker onlyOne er" refX="18" refY="9" markerWidth="18" markerHeight="18" orient="auto"><path d="M3,0 L3,18 M9,0 L9,18"></path></marker></defs><defs><marker id="erd_er-zeroOrOneStart" class="marker zeroOrOne er" refX="0" refY="9" markerWidth="30" markerHeight="18" orient="auto"><circle fill="white" cx="21" cy="9" r="6"></circle><path d="M9,0 L9,18"></path></marker></defs><defs><marker id="erd_er-zeroOrOneEnd" class="marker zeroOrOne er" refX="30" refY="9" markerWidth="30" markerHeight="18" orient="auto"><circle fill="white" cx="9" cy="9" r="6"></circle><path d="M21,0 L21,18"></path></marker></defs><defs><marker id="erd_er-oneOrMoreStart" class="marker oneOrMore er" refX="18" refY="18" markerWidth="45" markerHeight="36" orient="auto"><path d="M0,18 Q 18,0 36,18 Q 18,36 0,18 M42,9 L42,27"></path></marker></defs><defs><marker id="erd_er-oneOrMoreEnd" class="marker oneOrMore er" refX="27" refY="18" markerWidth="45" markerHeight="36" orient="auto"><path d="M3,9 L3,27 M9,18 Q27,0 45,18 Q27,36 9,18"></path></marker></defs><defs><marker id="erd_er-zeroOrMoreStart" class="marker zeroOrMore er" refX="18" refY="18" markerWidth="57" markerHeight="36" orient="auto"><circle fill="white" cx="48" cy="18" r="6"></circle><path d="M0,18 Q18,0 36,18 Q18,36 0,18"></path></marker></defs><defs><marker id="erd_er-zeroOrMoreEnd" class="marker zeroOrMore er" refX="39" refY="18" markerWidth="57" markerHeight="36" orient="auto"><circle fill="white" cx="9" cy="18" r="6"></circle><path d="M21,18 Q39,0 57,18 Q39,36 21,18"></path></marker></defs><g class="root"><g class="clusters"></g><g class="edgePaths"><path d="M389.141,92L389.141,100.417C389.141,108.833,389.141,125.667,389.141,142.5C389.141,159.333,389.141,176.167,389.141,184.583L389.141,193" id="erd-id_entity-User_Roles-0_entity-Users-1_0" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-User_Roles-0_entity-Users-1_0" data-points="W3sieCI6Mzg5LjE0MDYyNSwieSI6OTJ9LHsieCI6Mzg5LjE0MDYyNSwieSI6MTQyLjV9LHsieCI6Mzg5LjE0MDYyNSwieSI6MTkzfV0=" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M439.141,246.949L495.316,260.374C551.491,273.8,663.841,300.65,720.016,329.492C776.191,358.333,776.191,389.167,776.191,420C776.191,450.833,776.191,481.667,776.191,505.5C776.191,529.333,776.191,546.167,776.191,554.583L776.191,563" id="erd-id_entity-Users-1_entity-Customers-2_1" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Users-1_entity-Customers-2_1" data-points="W3sieCI6NDM5LjE0MDYyNSwieSI6MjQ2Ljk0OTMzNjQyODMxOTEzfSx7IngiOjc3Ni4xOTE0MDYyNSwieSI6MzI3LjV9LHsieCI6Nzc2LjE5MTQwNjI1LCJ5Ijo0MjB9LHsieCI6Nzc2LjE5MTQwNjI1LCJ5Ijo1MTIuNX0seyJ4Ijo3NzYuMTkxNDA2MjUsInkiOjU2M31d" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrOneEnd)"></path><path d="M432.648,277L441.367,285.417C450.086,293.833,467.523,310.667,655.294,333.814C843.065,356.962,1201.169,386.424,1380.221,401.155L1559.273,415.886" id="erd-id_entity-Users-1_entity-Agents-3_2" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Users-1_entity-Agents-3_2" data-points="W3sieCI6NDMyLjY0ODIyNjM1MTM1MTM1LCJ5IjoyNzd9LHsieCI6NDg0Ljk2MDkzNzUsInkiOjMyNy41fSx7IngiOjE1NTkuMjczNDM3NSwieSI6NDE1Ljg4NjM3NTAwNjk0ODd9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrOneEnd)"></path><path d="M1609.273,277L1609.273,285.417C1609.273,293.833,1609.273,310.667,1609.273,327.5C1609.273,344.333,1609.273,361.167,1609.273,369.583L1609.273,378" id="erd-id_entity-Branches-4_entity-Agents-3_3" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Branches-4_entity-Agents-3_3" data-points="W3sieCI6MTYwOS4yNzM0Mzc1LCJ5IjoyNzd9LHsieCI6MTYwOS4yNzM0Mzc1LCJ5IjozMjcuNX0seyJ4IjoxNjA5LjI3MzQzNzUsInkiOjM3OH1d" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M1616.994,462L1618.541,470.417C1620.089,478.833,1623.183,495.667,1624.73,519.5C1626.277,543.333,1626.277,574.167,1626.277,605C1626.277,635.833,1626.277,666.667,1625.854,690.5C1625.43,714.333,1624.583,731.167,1624.159,739.583L1623.735,748" id="erd-id_entity-Agents-3_entity-Agent_Customers-5_4" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Agents-3_entity-Agent_Customers-5_4" data-points="W3sieCI6MTYxNi45OTQxMzAwNjc1Njc1LCJ5Ijo0NjJ9LHsieCI6MTYyNi4yNzczNDM3NSwieSI6NTEyLjV9LHsieCI6MTYyNi4yNzczNDM3NSwieSI6NjA1fSx7IngiOjE2MjYuMjc3MzQzNzUsInkiOjY5Ny41fSx7IngiOjE2MjMuNzM1MjgyOTM5MTg5MSwieSI6NzQ4fV0=" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M834.871,623.807L873.193,636.089C911.514,648.371,988.158,672.936,1105.277,698.308C1222.397,723.68,1379.993,749.86,1458.792,762.95L1537.59,776.041" id="erd-id_entity-Customers-2_entity-Agent_Customers-5_5" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Customers-2_entity-Agent_Customers-5_5" data-points="W3sieCI6ODM0Ljg3MTA5Mzc1LCJ5Ijo2MjMuODA2OTgxMjEzNzk0Nn0seyJ4IjoxMDY0LjgwMDc4MTI1LCJ5Ijo2OTcuNX0seyJ4IjoxNTM3LjU4OTg0Mzc1LCJ5Ijo3NzYuMDQwNTc2Mzc1MzQ1NX1d" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M348.621,462L348.621,470.417C348.621,478.833,348.621,495.667,348.621,512.5C348.621,529.333,348.621,546.167,348.621,554.583L348.621,563" id="erd-id_entity-Policy_Types-6_entity-Insurance_Policies-7_6" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Policy_Types-6_entity-Insurance_Policies-7_6" data-points="W3sieCI6MzQ4LjYyMTA5Mzc1LCJ5Ijo0NjJ9LHsieCI6MzQ4LjYyMTA5Mzc1LCJ5Ijo1MTIuNX0seyJ4IjozNDguNjIxMDkzNzUsInkiOjU2M31d" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M1559.273,431.917L1502.921,445.347C1446.568,458.778,1333.862,485.639,1146.611,512.946C959.361,540.254,697.565,568.007,566.667,581.884L435.77,595.761" id="erd-id_entity-Agents-3_entity-Insurance_Policies-7_7" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Agents-3_entity-Insurance_Policies-7_7" data-points="W3sieCI6MTU1OS4yNzM0Mzc1LCJ5Ijo0MzEuOTE2NTAzOTU1MzkzNjR9LHsieCI6MTIyMS4xNTYyNSwieSI6NTEyLjV9LHsieCI6NDM1Ljc2OTUzMTI1LCJ5Ijo1OTUuNzYxMTM5NjM4ODkzNX1d" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M834.871,625.207L869.859,637.256C904.848,649.305,974.824,673.402,911.179,698.898C847.534,724.394,650.267,751.287,551.633,764.734L453,778.181" id="erd-id_entity-Customers-2_entity-Customer_Policies-8_8" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Customers-2_entity-Customer_Policies-8_8" data-points="W3sieCI6ODM0Ljg3MTA5Mzc1LCJ5Ijo2MjUuMjA3MzAzMjQwMDY3NX0seyJ4IjoxMDQ0LjgwMDc4MTI1LCJ5Ijo2OTcuNX0seyJ4Ijo0NTMsInkiOjc3OC4xODA3NDc4NjI2MzI4fV0=" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M415.026,647L428.334,655.417C441.641,663.833,468.256,680.667,469.865,697.5C471.474,714.333,448.078,731.167,436.379,739.583L424.681,748" id="erd-id_entity-Insurance_Policies-7_entity-Customer_Policies-8_9" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Insurance_Policies-7_entity-Customer_Policies-8_9" data-points="W3sieCI6NDE1LjAyNjQ5OTE1NTQwNTQsInkiOjY0N30seyJ4Ijo0OTQuODcxMDkzNzUsInkiOjY5Ny41fSx7IngiOjQyNC42ODA3ODU0NzI5NzI5NiwieSI6NzQ4fV0=" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M353.302,647L354.24,655.417C355.178,663.833,357.054,680.667,496.618,703.626C636.182,726.585,913.435,755.67,1052.061,770.212L1190.688,784.755" id="erd-id_entity-Insurance_Policies-7_entity-Claims-9_10" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Insurance_Policies-7_entity-Claims-9_10" data-points="W3sieCI6MzUzLjMwMTc1MjUzMzc4Mzc3LCJ5Ijo2NDd9LHsieCI6MzU4LjkyOTY4NzUsInkiOjY5Ny41fSx7IngiOjExOTAuNjg3NSwieSI6Nzg0Ljc1NDc5NTU1MjIwODR9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M1352.246,647L1352.246,655.417C1352.246,663.833,1352.246,680.667,1341.986,697.59C1331.727,714.514,1311.207,731.528,1300.947,740.035L1290.688,748.542" id="erd-id_entity-Claim_Statuses-10_entity-Claims-9_11" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Claim_Statuses-10_entity-Claims-9_11" data-points="W3sieCI6MTM1Mi4yNDYwOTM3NSwieSI6NjQ3fSx7IngiOjEzNTIuMjQ2MDkzNzUsInkiOjY5Ny41fSx7IngiOjEyOTAuNjg3NSwieSI6NzQ4LjU0MTk2NTc1NTEwMzR9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M1240.688,832L1240.688,840.417C1240.688,848.833,1240.688,865.667,1240.688,882.5C1240.688,899.333,1240.688,916.167,1240.688,924.583L1240.688,933" id="erd-id_entity-Claims-9_entity-Policy_Claims_Documents-11_12" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Claims-9_entity-Policy_Claims_Documents-11_12" data-points="W3sieCI6MTI0MC42ODc1LCJ5Ijo4MzJ9LHsieCI6MTI0MC42ODc1LCJ5Ijo4ODIuNX0seyJ4IjoxMjQwLjY4NzUsInkiOjkzM31d" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M366.305,832L366.305,840.417C366.305,848.833,366.305,865.667,425.443,887.412C484.581,909.158,602.857,935.817,661.995,949.146L721.133,962.475" id="erd-id_entity-Customer_Policies-8_entity-Payments-12_13" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Customer_Policies-8_entity-Payments-12_13" data-points="W3sieCI6MzY2LjMwNDY4NzUsInkiOjgzMn0seyJ4IjozNjYuMzA0Njg3NSwieSI6ODgyLjV9LHsieCI6NzIxLjEzMjgxMjUsInkiOjk2Mi40NzQ5NjcxNjIyNDd9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M929.969,832L929.969,840.417C929.969,848.833,929.969,865.667,913.686,883.91C897.404,902.154,864.839,921.808,848.556,931.635L832.273,941.462" id="erd-id_entity-Payment_Methods-13_entity-Payments-12_14" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Payment_Methods-13_entity-Payments-12_14" data-points="W3sieCI6OTI5Ljk2ODc1LCJ5Ijo4MzJ9LHsieCI6OTI5Ljk2ODc1LCJ5Ijo4ODIuNX0seyJ4Ijo4MzIuMjczNDM3NSwieSI6OTQxLjQ2MTc5NTI5MDAzOTd9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M776.422,647L776.468,655.417C776.514,663.833,776.607,680.667,764.414,697.889C752.221,715.111,727.743,732.722,715.505,741.528L703.266,750.333" id="erd-id_entity-Customers-2_entity-Feedback-14_15" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Customers-2_entity-Feedback-14_15" data-points="W3sieCI6Nzc2LjQyMTk4MDU3NDMyNDQsInkiOjY0N30seyJ4Ijo3NzYuNjk5MjE4NzUsInkiOjY5Ny41fSx7IngiOjcwMy4yNjU2MjUsInkiOjc1MC4zMzM0NTQ4NjU4NTg1fV0=" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M717.512,641.532L702.529,650.86C687.546,660.188,657.579,678.844,561.262,701.757C464.945,724.67,302.277,751.839,220.943,765.424L139.609,779.009" id="erd-id_entity-Customers-2_entity-Beneficiaries-15_16" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Customers-2_entity-Beneficiaries-15_16" data-points="W3sieCI6NzE3LjUxMTcxODc1LCJ5Ijo2NDEuNTMyMTAxMTY3MzE1Mn0seyJ4Ijo2MjcuNjEzMjgxMjUsInkiOjY5Ny41fSx7IngiOjEzOS42MDkzNzUsInkiOjc3OS4wMDg5NTc4NTU3NTczfV0=" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M261.473,634.333L230.195,644.861C198.917,655.389,136.361,676.444,105.083,695.389C73.805,714.333,73.805,731.167,73.805,739.583L73.805,748" id="erd-id_entity-Insurance_Policies-7_entity-Beneficiaries-15_17" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Insurance_Policies-7_entity-Beneficiaries-15_17" data-points="W3sieCI6MjYxLjQ3MjY1NjI1LCJ5Ijo2MzQuMzMzMTQ4NTUwODc5Mn0seyJ4Ijo3My44MDQ2ODc1LCJ5Ijo2OTcuNX0seyJ4Ijo3My44MDQ2ODc1LCJ5Ijo3NDh9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path><path d="M339.141,250.538L297.865,263.365C256.59,276.192,174.039,301.846,132.764,323.09C91.488,344.333,91.488,361.167,91.488,369.583L91.488,378" id="erd-id_entity-Users-1_entity-Logs-16_18" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="undefined;;;undefined" data-edge="true" data-et="edge" data-id="id_entity-Users-1_entity-Logs-16_18" data-points="W3sieCI6MzM5LjE0MDYyNSwieSI6MjUwLjUzODI2MTY1Njk3NzF9LHsieCI6OTEuNDg4MjgxMjUsInkiOjMyNy41fSx7IngiOjkxLjQ4ODI4MTI1LCJ5IjozNzh9XQ==" data-look="classic" marker-start="url(#erd_er-onlyOneStart)" marker-end="url(#erd_er-zeroOrMoreEnd)"></path></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(389.140625, 142.5)"><g class="label" data-id="id_entity-User_Roles-0_entity-Users-1_0" transform="translate(-11.6796875, -10.5)"><foreignObject width="23.359375" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>role</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(776.19140625, 420)"><g class="label" data-id="id_entity-Users-1_entity-Customers-2_1" transform="translate(-10.8984375, -10.5)"><foreignObject width="21.796875" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>is a</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(985.88418, 368.71221)"><g class="label" data-id="id_entity-Users-1_entity-Agents-3_2" transform="translate(-10.8984375, -10.5)"><foreignObject width="21.796875" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>is a</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1609.2734375, 327.5)"><g class="label" data-id="id_entity-Branches-4_entity-Agents-3_3" transform="translate(-26.0703125, -10.5)"><foreignObject width="52.140625" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>employs</p></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="id_entity-Agents-3_entity-Agent_Customers-5_4" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="id_entity-Customers-2_entity-Agent_Customers-5_5" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(348.62109375, 512.5)"><g class="label" data-id="id_entity-Policy_Types-6_entity-Insurance_Policies-7_6" transform="translate(-13.234375, -10.5)"><foreignObject width="26.46875" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>type</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1221.15625, 512.5)"><g class="label" data-id="id_entity-Agents-3_entity-Insurance_Policies-7_7" transform="translate(-14.0078125, -10.5)"><foreignObject width="28.015625" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>sells</p></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="id_entity-Customers-2_entity-Customer_Policies-8_8" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="id_entity-Insurance_Policies-7_entity-Customer_Policies-8_9" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(749.54093, 738.47672)"><g class="label" data-id="id_entity-Insurance_Policies-7_entity-Claims-9_10" transform="translate(-33.8515625, -10.5)"><foreignObject width="67.703125" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>claimed on</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1352.24609375, 697.5)"><g class="label" data-id="id_entity-Claim_Statuses-10_entity-Claims-9_11" transform="translate(-18.6796875, -10.5)"><foreignObject width="37.359375" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>status</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(1240.6875, 882.5)"><g class="label" data-id="id_entity-Claims-9_entity-Policy_Claims_Documents-11_12" transform="translate(-40.4765625, -10.5)"><foreignObject width="80.953125" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>supported by</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(366.3046875, 882.5)"><g class="label" data-id="id_entity-Customer_Policies-8_entity-Payments-12_13" transform="translate(-24.1328125, -10.5)"><foreignObject width="48.265625" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>paid via</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(929.96875, 882.5)"><g class="label" data-id="id_entity-Payment_Methods-13_entity-Payments-12_14" transform="translate(-23.3515625, -10.5)"><foreignObject width="46.703125" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>method</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(776.69921875, 697.5)"><g class="label" data-id="id_entity-Customers-2_entity-Feedback-14_15" transform="translate(-16.34375, -10.5)"><foreignObject width="32.6875" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>gives</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(435.83627, 729.5316)"><g class="label" data-id="id_entity-Customers-2_entity-Beneficiaries-15_16" transform="translate(-21.015625, -10.5)"><foreignObject width="42.03125" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>names</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(73.8046875, 697.5)"><g class="label" data-id="id_entity-Insurance_Policies-7_entity-Beneficiaries-15_17" transform="translate(-20.6171875, -10.5)"><foreignObject width="41.234375" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>covers</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(91.48828125, 327.5)"><g class="label" data-id="id_entity-Users-1_entity-Logs-16_18" transform="translate(-12.84375, -10.5)"><foreignObject width="25.6875" height="21"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>acts</p></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="erd-entity-User_Roles-0" data-look="classic" transform="translate(389.140625, 50)"><rect class="basic label-container" style="" x="-61.796875" y="-42" width="123.59375" height="84"></rect><g class="label" style="" transform="translate(-41.796875, -12)"><rect></rect><foreignObject width="83.59375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>User_Roles</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Users-1" data-look="classic" transform="translate(389.140625, 235)"><rect class="basic label-container" style="" x="-50" y="-42" width="100" height="84"></rect><g class="label" style="" transform="translate(-20.890625, -12)"><rect></rect><foreignObject width="41.78125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Users</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Customers-2" data-look="classic" transform="translate(776.19140625, 605)"><rect class="basic label-container" style="" x="-58.6796875" y="-42" width="117.359375" height="84"></rect><g class="label" style="" transform="translate(-38.6796875, -12)"><rect></rect><foreignObject width="77.359375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Customers</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Agents-3" data-look="classic" transform="translate(1609.2734375, 420)"><rect class="basic label-container" style="" x="-50" y="-42" width="100" height="84"></rect><g class="label" style="" transform="translate(-24.90625, -12)"><rect></rect><foreignObject width="49.8125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Agents</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Branches-4" data-look="classic" transform="translate(1609.2734375, 235)"><rect class="basic label-container" style="" x="-53.796875" y="-42" width="107.59375" height="84"></rect><g class="label" style="" transform="translate(-33.796875, -12)"><rect></rect><foreignObject width="67.59375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Branches</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Agent_Customers-5" data-look="classic" transform="translate(1621.62109375, 790)"><rect class="basic label-container" style="" x="-84.03125" y="-42" width="168.0625" height="84"></rect><g class="label" style="" transform="translate(-64.03125, -12)"><rect></rect><foreignObject width="128.0625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Agent_Customers</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Policy_Types-6" data-look="classic" transform="translate(348.62109375, 420)"><rect class="basic label-container" style="" x="-67.1328125" y="-42" width="134.265625" height="84"></rect><g class="label" style="" transform="translate(-47.1328125, -12)"><rect></rect><foreignObject width="94.265625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Policy_Types</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Insurance_Policies-7" data-look="classic" transform="translate(348.62109375, 605)"><rect class="basic label-container" style="" x="-87.1484375" y="-42" width="174.296875" height="84"></rect><g class="label" style="" transform="translate(-67.1484375, -12)"><rect></rect><foreignObject width="134.296875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Insurance_Policies</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Customer_Policies-8" data-look="classic" transform="translate(366.3046875, 790)"><rect class="basic label-container" style="" x="-86.6953125" y="-42" width="173.390625" height="84"></rect><g class="label" style="" transform="translate(-66.6953125, -12)"><rect></rect><foreignObject width="133.390625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Customer_Policies</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Claims-9" data-look="classic" transform="translate(1240.6875, 790)"><rect class="basic label-container" style="" x="-50" y="-42" width="100" height="84"></rect><g class="label" style="" transform="translate(-24.4453125, -12)"><rect></rect><foreignObject width="48.890625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Claims</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Claim_Statuses-10" data-look="classic" transform="translate(1352.24609375, 605)"><rect class="basic label-container" style="" x="-76.0234375" y="-42" width="152.046875" height="84"></rect><g class="label" style="" transform="translate(-56.0234375, -12)"><rect></rect><foreignObject width="112.046875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Claim_Statuses</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Policy_Claims_Documents-11" data-look="classic" transform="translate(1240.6875, 975)"><rect class="basic label-container" style="" x="-115.1484375" y="-42" width="230.296875" height="84"></rect><g class="label" style="" transform="translate(-95.1484375, -12)"><rect></rect><foreignObject width="190.296875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Policy_Claims_Documents</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Payments-12" data-look="classic" transform="translate(776.703125, 975)"><rect class="basic label-container" style="" x="-55.5703125" y="-42" width="111.140625" height="84"></rect><g class="label" style="" transform="translate(-35.5703125, -12)"><rect></rect><foreignObject width="71.140625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Payments</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Payment_Methods-13" data-look="classic" transform="translate(929.96875, 790)"><rect class="basic label-container" style="" x="-86.703125" y="-42" width="173.40625" height="84"></rect><g class="label" style="" transform="translate(-66.703125, -12)"><rect></rect><foreignObject width="133.40625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Payment_Methods</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Feedback-14" data-look="classic" transform="translate(648.1328125, 790)"><rect class="basic label-container" style="" x="-55.1328125" y="-42" width="110.265625" height="84"></rect><g class="label" style="" transform="translate(-35.1328125, -12)"><rect></rect><foreignObject width="70.265625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Feedback</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Beneficiaries-15" data-look="classic" transform="translate(73.8046875, 790)"><rect class="basic label-container" style="" x="-65.8046875" y="-42" width="131.609375" height="84"></rect><g class="label" style="" transform="translate(-45.8046875, -12)"><rect></rect><foreignObject width="91.609375" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Beneficiaries</p></span></div></foreignObject></g></g><g class="node default" id="erd-entity-Logs-16" data-look="classic" transform="translate(91.48828125, 420)"><rect class="basic label-container" style="" x="-50" y="-42" width="100" height="84"></rect><g class="label" style="" transform="translate(-17.3515625, -12)"><rect></rect><foreignObject width="34.703125" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: center;"><span class="nodeLabel markdown-node-label"><p>Logs</p></span></div></foreignObject></g></g></g></g></g><defs><filter id="erd-drop-shadow" height="130%" width="130%"><feDropShadow dx="4" dy="4" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow></filter></defs><defs><filter id="erd-drop-shadow-small" height="150%" width="150%"><feDropShadow dx="2" dy="2" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow></filter></defs><linearGradient id="erd-gradient" gradientUnits="objectBoundingBox" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="hsl(0, 0%, 83.3333333333%)" stop-opacity="1"></stop><stop offset="100%" stop-color="hsl(0, 0%, 88.9215686275%)" stop-opacity="1"></stop></linearGradient></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.43.0 (0)
+ -->
+<!-- Title: ERD Pages: 1 -->
+<svg width="1399pt" height="964pt"
+ viewBox="0.00 0.00 1399.20 964.20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(21.6 942.6)">
+<title>ERD</title>
+<polygon fill="white" stroke="transparent" points="-21.6,21.6 -21.6,-942.6 1377.6,-942.6 1377.6,21.6 -21.6,21.6"/>
+<text text-anchor="start" x="824" y="-8.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#5b6678">PK</text>
+<text text-anchor="start" x="841" y="-8.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#5b6678"> primary key &#160;&#160;</text>
+<text text-anchor="start" x="923" y="-8.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#5b6678">FK</text>
+<text text-anchor="start" x="939" y="-8.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#5b6678"> foreign key &#160;&#160;</text>
+<text text-anchor="start" x="1016" y="-8.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#5b6678">UQ</text>
+<text text-anchor="start" x="1035" y="-8.2" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#5b6678"> unique &#160;&#160;&#160;&#160;&#160;||───o&lt; &#160;one&#45;to&#45;many &#160;&#160;&#160;&#160;&#160;||───o| &#160;one&#45;to&#45;one</text>
+<g id="clust1" class="cluster">
+<title>cluster_0</title>
+<path fill="#e8f1fb" stroke="#e8f1fb" d="M20,-28C20,-28 836,-28 836,-28 842,-28 848,-34 848,-40 848,-40 848,-389 848,-389 848,-395 842,-401 836,-401 836,-401 20,-401 20,-401 14,-401 8,-395 8,-389 8,-389 8,-40 8,-40 8,-34 14,-28 20,-28"/>
+<text text-anchor="start" x="16" y="-387.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00" fill="#2f6db5">People &amp; access</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_1</title>
+<path fill="#e6f5f3" stroke="#e6f5f3" d="M450,-409C450,-409 1079,-409 1079,-409 1085,-409 1091,-415 1091,-421 1091,-421 1091,-725 1091,-725 1091,-731 1085,-737 1079,-737 1079,-737 450,-737 450,-737 444,-737 438,-731 438,-725 438,-725 438,-421 438,-421 438,-415 444,-409 450,-409"/>
+<text text-anchor="start" x="446" y="-723.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00" fill="#0e7c86">Policies</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_2</title>
+<path fill="#f1ecfb" stroke="#f1ecfb" d="M889,-213C889,-213 1336,-213 1336,-213 1342,-213 1348,-219 1348,-225 1348,-225 1348,-389 1348,-389 1348,-395 1342,-401 1336,-401 1336,-401 889,-401 889,-401 883,-401 877,-395 877,-389 877,-389 877,-225 877,-225 877,-219 883,-213 889,-213"/>
+<text text-anchor="start" x="885" y="-387.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00" fill="#6a46c2">Billing</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_3</title>
+<path fill="#fdf0e4" stroke="#fdf0e4" d="M672.5,-745C672.5,-745 1326.5,-745 1326.5,-745 1332.5,-745 1338.5,-751 1338.5,-757 1338.5,-757 1338.5,-901 1338.5,-901 1338.5,-907 1332.5,-913 1326.5,-913 1326.5,-913 672.5,-913 672.5,-913 666.5,-913 660.5,-907 660.5,-901 660.5,-901 660.5,-757 660.5,-757 660.5,-751 666.5,-745 672.5,-745"/>
+<text text-anchor="start" x="668.5" y="-899.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00" fill="#b4610f">Claims</text>
+</g>
+<!-- User_Roles -->
+<g id="node1" class="node">
+<title>User_Roles</title>
+<path fill="white" stroke="transparent" d="M34,-57.5C34,-57.5 130,-57.5 130,-57.5 136,-57.5 142,-63.5 142,-69.5 142,-69.5 142,-106.5 142,-106.5 142,-112.5 136,-118.5 130,-118.5 130,-118.5 34,-118.5 34,-118.5 28,-118.5 22,-112.5 22,-106.5 22,-106.5 22,-69.5 22,-69.5 22,-63.5 28,-57.5 34,-57.5"/>
+<polygon fill="#2f6db5" stroke="transparent" points="23,-96 23,-117 141,-117 141,-96 23,-96"/>
+<text text-anchor="start" x="27" y="-104.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">User_Roles</text>
+<text text-anchor="start" x="27" y="-85.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="49" y="-85" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">role_id</text>
+<text text-anchor="start" x="121" y="-84.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="27" y="-66.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="49" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">role_name</text>
+<text text-anchor="start" x="109" y="-65.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#2f6db5" d="M34,-57.5C34,-57.5 130,-57.5 130,-57.5 136,-57.5 142,-63.5 142,-69.5 142,-69.5 142,-106.5 142,-106.5 142,-112.5 136,-118.5 130,-118.5 130,-118.5 34,-118.5 34,-118.5 28,-118.5 22,-112.5 22,-106.5 22,-106.5 22,-69.5 22,-69.5 22,-63.5 28,-57.5 34,-57.5"/>
+</g>
+<!-- Users -->
+<g id="node2" class="node">
+<title>Users</title>
+<path fill="white" stroke="transparent" d="M209.5,-76.5C209.5,-76.5 369.5,-76.5 369.5,-76.5 375.5,-76.5 381.5,-82.5 381.5,-88.5 381.5,-88.5 381.5,-201.5 381.5,-201.5 381.5,-207.5 375.5,-213.5 369.5,-213.5 369.5,-213.5 209.5,-213.5 209.5,-213.5 203.5,-213.5 197.5,-207.5 197.5,-201.5 197.5,-201.5 197.5,-88.5 197.5,-88.5 197.5,-82.5 203.5,-76.5 209.5,-76.5"/>
+<polygon fill="#2f6db5" stroke="transparent" points="198.5,-191 198.5,-212 380.5,-212 380.5,-191 198.5,-191"/>
+<text text-anchor="start" x="202.5" y="-199.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Users</text>
+<text text-anchor="start" x="202.5" y="-180.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="224.5" y="-180" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">user_id</text>
+<text text-anchor="start" x="360.5" y="-179.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="207.5" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="224.5" y="-160" font-family="Helvetica,sans-Serif" font-size="10.00">first_name</text>
+<text text-anchor="start" x="314.5" y="-160.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(50)</text>
+<text text-anchor="start" x="207.5" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="224.5" y="-141" font-family="Helvetica,sans-Serif" font-size="10.00">last_name</text>
+<text text-anchor="start" x="314.5" y="-141.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(50)</text>
+<text text-anchor="start" x="202.5" y="-123.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="224.5" y="-122" font-family="Helvetica,sans-Serif" font-size="10.00">email</text>
+<text text-anchor="start" x="308.5" y="-122.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(100)</text>
+<text text-anchor="start" x="207.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="224.5" y="-103" font-family="Helvetica,sans-Serif" font-size="10.00">password_hash</text>
+<text text-anchor="start" x="308.5" y="-103.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(255)</text>
+<text text-anchor="start" x="202.5" y="-85.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="224.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">role_id</text>
+<text text-anchor="start" x="360.5" y="-84.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<path fill="none" stroke="#2f6db5" d="M209.5,-76.5C209.5,-76.5 369.5,-76.5 369.5,-76.5 375.5,-76.5 381.5,-82.5 381.5,-88.5 381.5,-88.5 381.5,-201.5 381.5,-201.5 381.5,-207.5 375.5,-213.5 369.5,-213.5 369.5,-213.5 209.5,-213.5 209.5,-213.5 203.5,-213.5 197.5,-207.5 197.5,-201.5 197.5,-201.5 197.5,-88.5 197.5,-88.5 197.5,-82.5 203.5,-76.5 209.5,-76.5"/>
+</g>
+<!-- User_Roles&#45;&gt;Users -->
+<g id="edge19" class="edge">
+<title>User_Roles:role_id_r&#45;&gt;Users:role_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M150.46,-86C163.7,-86 171.23,-86 182.83,-86"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="142.8,-90 142.8,-82 144.4,-82 144.4,-90 142.8,-90"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="142,-86 146,-86 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="146.8,-90 146.8,-82 148.4,-82 148.4,-90 146.8,-90"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="146,-86 150,-86 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="189.5,-86 197.5,-89.6 193.5,-86 197.5,-86 197.5,-86 197.5,-86 193.5,-86 197.5,-82.4 189.5,-86 189.5,-86"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="186.3" cy="-86" rx="3.2" ry="3.2"/>
+</g>
+<!-- Customers -->
+<g id="node3" class="node">
+<title>Customers</title>
+<path fill="white" stroke="transparent" d="M453,-42C453,-42 601,-42 601,-42 607,-42 613,-48 613,-54 613,-54 613,-110 613,-110 613,-116 607,-122 601,-122 601,-122 453,-122 453,-122 447,-122 441,-116 441,-110 441,-110 441,-54 441,-54 441,-48 447,-42 453,-42"/>
+<polygon fill="#2f6db5" stroke="transparent" points="442,-100 442,-121 612,-121 612,-100 442,-100"/>
+<text text-anchor="start" x="446" y="-108.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Customers</text>
+<text text-anchor="start" x="446" y="-89.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="468" y="-89" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">customer_id</text>
+<text text-anchor="start" x="592" y="-88.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="446" y="-70.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="468" y="-69" font-family="Helvetica,sans-Serif" font-size="10.00">user_id</text>
+<text text-anchor="start" x="592" y="-69.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="446" y="-51.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="468" y="-50" font-family="Helvetica,sans-Serif" font-size="10.00">national_id</text>
+<text text-anchor="start" x="546" y="-50.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(20)</text>
+<path fill="none" stroke="#2f6db5" d="M453,-42C453,-42 601,-42 601,-42 607,-42 613,-48 613,-54 613,-54 613,-110 613,-110 613,-116 607,-122 601,-122 601,-122 453,-122 453,-122 447,-122 441,-116 441,-110 441,-110 441,-54 441,-54 441,-48 447,-42 453,-42"/>
+</g>
+<!-- Users&#45;&gt;Customers -->
+<g id="edge11" class="edge">
+<title>Users:user_id_r&#45;&gt;Customers:user_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M389.48,-181.11C428.9,-171.42 394.36,-86.02 430.27,-72.73"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="382.74,-185.89 381.85,-177.94 383.44,-177.76 384.33,-185.71 382.74,-185.89"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="381.5,-182 385.48,-181.56 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="386.72,-185.44 385.83,-177.49 387.42,-177.31 388.31,-185.26 386.72,-185.44"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="385.48,-181.56 389.45,-181.11 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="439.57,-67.18 440.85,-75.08 439.27,-75.33 437.99,-67.43 439.57,-67.18"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="441,-71 437.05,-71.64 "/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="433.89" cy="-72.15" rx="3.2" ry="3.2"/>
+</g>
+<!-- Agents -->
+<g id="node4" class="node">
+<title>Agents</title>
+<path fill="white" stroke="transparent" d="M449,-265.5C449,-265.5 605,-265.5 605,-265.5 611,-265.5 617,-271.5 617,-277.5 617,-277.5 617,-352.5 617,-352.5 617,-358.5 611,-364.5 605,-364.5 605,-364.5 449,-364.5 449,-364.5 443,-364.5 437,-358.5 437,-352.5 437,-352.5 437,-277.5 437,-277.5 437,-271.5 443,-265.5 449,-265.5"/>
+<polygon fill="#2f6db5" stroke="transparent" points="438,-342 438,-363 616,-363 616,-342 438,-342"/>
+<text text-anchor="start" x="442" y="-350.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Agents</text>
+<text text-anchor="start" x="442" y="-331.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="464" y="-331" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">agent_id</text>
+<text text-anchor="start" x="596" y="-330.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="442" y="-312.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="464" y="-311" font-family="Helvetica,sans-Serif" font-size="10.00">user_id</text>
+<text text-anchor="start" x="596" y="-311.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="442" y="-293.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="464" y="-292" font-family="Helvetica,sans-Serif" font-size="10.00">license_number</text>
+<text text-anchor="start" x="550" y="-292.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(50)</text>
+<text text-anchor="start" x="442" y="-274.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="464" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">branch_id</text>
+<text text-anchor="start" x="596" y="-273.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<path fill="none" stroke="#2f6db5" d="M449,-265.5C449,-265.5 605,-265.5 605,-265.5 611,-265.5 617,-271.5 617,-277.5 617,-277.5 617,-352.5 617,-352.5 617,-358.5 611,-364.5 605,-364.5 605,-364.5 449,-364.5 449,-364.5 443,-364.5 437,-358.5 437,-352.5 437,-352.5 437,-277.5 437,-277.5 437,-271.5 443,-265.5 449,-265.5"/>
+</g>
+<!-- Users&#45;&gt;Agents -->
+<g id="edge3" class="edge">
+<title>Users:user_id_r&#45;&gt;Agents:user_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M389.54,-182.84C435.13,-193.25 384.43,-297.67 426.54,-311.49"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="381.88,-186.06 382.71,-178.1 384.3,-178.27 383.47,-186.23 381.88,-186.06"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="381.5,-182 385.48,-182.41 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="385.86,-186.48 386.69,-178.52 388.28,-178.68 387.45,-186.64 385.86,-186.48"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="385.48,-182.41 389.46,-182.83 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="436.78,-308.93 435.64,-316.84 434.05,-316.62 435.2,-308.7 436.78,-308.93"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="437,-313 433.04,-312.43 "/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="429.87" cy="-311.97" rx="3.2" ry="3.2"/>
+</g>
+<!-- Logs -->
+<g id="node8" class="node">
+<title>Logs</title>
+<path fill="white" stroke="transparent" d="M458,-144.5C458,-144.5 596,-144.5 596,-144.5 602,-144.5 608,-150.5 608,-156.5 608,-156.5 608,-231.5 608,-231.5 608,-237.5 602,-243.5 596,-243.5 596,-243.5 458,-243.5 458,-243.5 452,-243.5 446,-237.5 446,-231.5 446,-231.5 446,-156.5 446,-156.5 446,-150.5 452,-144.5 458,-144.5"/>
+<polygon fill="#2f6db5" stroke="transparent" points="447,-221 447,-242 607,-242 607,-221 447,-221"/>
+<text text-anchor="start" x="451" y="-229.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Logs</text>
+<text text-anchor="start" x="451" y="-210.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="473" y="-210" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">log_id</text>
+<text text-anchor="start" x="587" y="-209.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="451" y="-191.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="473" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00">user_id</text>
+<text text-anchor="start" x="587" y="-190.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="456" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="473" y="-171" font-family="Helvetica,sans-Serif" font-size="10.00">action</text>
+<text text-anchor="start" x="535" y="-171.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(255)</text>
+<text text-anchor="start" x="456" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="473" y="-152" font-family="Helvetica,sans-Serif" font-size="10.00">timestamp</text>
+<text text-anchor="start" x="551" y="-152.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">TIMESTAMP</text>
+<path fill="none" stroke="#2f6db5" d="M458,-144.5C458,-144.5 596,-144.5 596,-144.5 602,-144.5 608,-150.5 608,-156.5 608,-156.5 608,-231.5 608,-231.5 608,-237.5 602,-243.5 596,-243.5 596,-243.5 458,-243.5 458,-243.5 452,-243.5 446,-237.5 446,-231.5 446,-231.5 446,-156.5 446,-156.5 446,-150.5 452,-144.5 458,-144.5"/>
+</g>
+<!-- Users&#45;&gt;Logs -->
+<g id="edge15" class="edge">
+<title>Users:user_id_r&#45;&gt;Logs:user_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M389.69,-182.29C407.34,-183.58 415.97,-188.88 431.63,-191.06"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="382.16,-186.03 382.44,-178.03 384.04,-178.09 383.76,-186.08 382.16,-186.03"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="381.5,-182 385.5,-182.14 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="386.16,-186.17 386.44,-178.17 388.04,-178.23 387.76,-186.22 386.16,-186.17"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="385.5,-182.14 389.5,-182.28 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="438.02,-191.48 445.76,-195.59 442.01,-191.74 446,-192 446,-192 446,-192 442.01,-191.74 446.24,-188.41 438.02,-191.48 438.02,-191.48"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="434.82" cy="-191.27" rx="3.2" ry="3.2"/>
+</g>
+<!-- Agent_Customers -->
+<g id="node6" class="node">
+<title>Agent_Customers</title>
+<path fill="white" stroke="transparent" d="M683,-285C683,-285 822,-285 822,-285 828,-285 834,-291 834,-297 834,-297 834,-353 834,-353 834,-359 828,-365 822,-365 822,-365 683,-365 683,-365 677,-365 671,-359 671,-353 671,-353 671,-297 671,-297 671,-291 677,-285 683,-285"/>
+<polygon fill="#2f6db5" stroke="transparent" points="672.5,-343 672.5,-364 833.5,-364 833.5,-343 672.5,-343"/>
+<text text-anchor="start" x="676.5" y="-351.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Agent_Customers</text>
+<text text-anchor="start" x="676.5" y="-332.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="698.5" y="-332" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">agent_customer_id</text>
+<text text-anchor="start" x="813.5" y="-331.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="676.5" y="-313.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="698.5" y="-312" font-family="Helvetica,sans-Serif" font-size="10.00">agent_id</text>
+<text text-anchor="start" x="813.5" y="-312.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="676.5" y="-294.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="698.5" y="-293" font-family="Helvetica,sans-Serif" font-size="10.00">customer_id</text>
+<text text-anchor="start" x="813.5" y="-293.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<path fill="none" stroke="#2f6db5" d="M683,-285C683,-285 822,-285 822,-285 828,-285 834,-291 834,-297 834,-297 834,-353 834,-353 834,-359 828,-365 822,-365 822,-365 683,-365 683,-365 677,-365 671,-359 671,-353 671,-353 671,-297 671,-297 671,-291 677,-285 683,-285"/>
+</g>
+<!-- Customers&#45;&gt;Agent_Customers -->
+<g id="edge2" class="edge">
+<title>Customers:customer_id_r&#45;&gt;Agent_Customers:customer_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M621.23,-91.43C690.88,-99.24 608.94,-211.44 660.5,-274 663.09,-277.14 666.79,-277.98 670.47,-278.3"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="613.59,-95.04 614.01,-87.05 615.61,-87.13 615.19,-95.12 613.59,-95.04"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="613,-91 616.99,-91.21 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="617.58,-95.25 618,-87.26 619.6,-87.34 619.18,-95.33 617.58,-95.25"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="616.99,-91.21 620.99,-91.42 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="676.39,-281.34 681.85,-288.2 679.94,-283.17 683.5,-285 683.5,-285 683.5,-285 679.94,-283.17 685.15,-281.8 676.39,-281.34 676.39,-281.34"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="673.54" cy="-279.88" rx="3.2" ry="3.2"/>
+</g>
+<!-- Feedback -->
+<g id="node7" class="node">
+<title>Feedback</title>
+<path fill="white" stroke="transparent" d="M683.5,-145C683.5,-145 821.5,-145 821.5,-145 827.5,-145 833.5,-151 833.5,-157 833.5,-157 833.5,-251 833.5,-251 833.5,-257 827.5,-263 821.5,-263 821.5,-263 683.5,-263 683.5,-263 677.5,-263 671.5,-257 671.5,-251 671.5,-251 671.5,-157 671.5,-157 671.5,-151 677.5,-145 683.5,-145"/>
+<polygon fill="#2f6db5" stroke="transparent" points="672.5,-241 672.5,-262 832.5,-262 832.5,-241 672.5,-241"/>
+<text text-anchor="start" x="676.5" y="-249.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Feedback</text>
+<text text-anchor="start" x="676.5" y="-230.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="698.5" y="-230" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">feedback_id</text>
+<text text-anchor="start" x="812.5" y="-229.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="676.5" y="-211.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#2f6db5">FK</text>
+<text text-anchor="start" x="698.5" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00">customer_id</text>
+<text text-anchor="start" x="812.5" y="-210.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="681.5" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="698.5" y="-191" font-family="Helvetica,sans-Serif" font-size="10.00">comments</text>
+<text text-anchor="start" x="805.5" y="-191.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">TEXT</text>
+<text text-anchor="start" x="681.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="698.5" y="-172" font-family="Helvetica,sans-Serif" font-size="10.00">rating</text>
+<text text-anchor="start" x="812.5" y="-172.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="681.5" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="698.5" y="-153" font-family="Helvetica,sans-Serif" font-size="10.00">submitted_at</text>
+<text text-anchor="start" x="776.5" y="-153.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">TIMESTAMP</text>
+<path fill="none" stroke="#2f6db5" d="M683.5,-145C683.5,-145 821.5,-145 821.5,-145 827.5,-145 833.5,-151 833.5,-157 833.5,-157 833.5,-251 833.5,-251 833.5,-257 827.5,-263 821.5,-263 821.5,-263 683.5,-263 683.5,-263 677.5,-263 671.5,-257 671.5,-251 671.5,-251 671.5,-157 671.5,-157 671.5,-151 677.5,-145 683.5,-145"/>
+</g>
+<!-- Customers&#45;&gt;Feedback -->
+<g id="edge12" class="edge">
+<title>Customers:customer_id_r&#45;&gt;Feedback:customer_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M620.97,-91.84C662.68,-101.53 624.06,-191.61 657.27,-209.8"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="613.37,-95.06 614.22,-87.11 615.81,-87.28 614.96,-95.23 613.37,-95.06"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="613,-91 616.98,-91.42 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="617.35,-95.48 618.19,-87.53 619.79,-87.7 618.94,-95.65 617.35,-95.48"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="616.98,-91.42 620.96,-91.84 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="663.69,-211.25 670.71,-216.51 667.6,-212.12 671.5,-213 671.5,-213 671.5,-213 667.6,-212.12 672.29,-209.49 663.69,-211.25 663.69,-211.25"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="660.57" cy="-210.55" rx="3.2" ry="3.2"/>
+</g>
+<!-- Customer_Policies -->
+<g id="node11" class="node">
+<title>Customer_Policies</title>
+<path fill="white" stroke="transparent" d="M913.5,-423.5C913.5,-423.5 1051.5,-423.5 1051.5,-423.5 1057.5,-423.5 1063.5,-429.5 1063.5,-435.5 1063.5,-435.5 1063.5,-548.5 1063.5,-548.5 1063.5,-554.5 1057.5,-560.5 1051.5,-560.5 1051.5,-560.5 913.5,-560.5 913.5,-560.5 907.5,-560.5 901.5,-554.5 901.5,-548.5 901.5,-548.5 901.5,-435.5 901.5,-435.5 901.5,-429.5 907.5,-423.5 913.5,-423.5"/>
+<polygon fill="#0e7c86" stroke="transparent" points="902.5,-538 902.5,-559 1062.5,-559 1062.5,-538 902.5,-538"/>
+<text text-anchor="start" x="906.5" y="-546.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Customer_Policies</text>
+<text text-anchor="start" x="906.5" y="-527.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="928.5" y="-527" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">policy_holder_id</text>
+<text text-anchor="start" x="1042.5" y="-526.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="906.5" y="-508.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#0e7c86">FK</text>
+<text text-anchor="start" x="928.5" y="-507" font-family="Helvetica,sans-Serif" font-size="10.00">customer_id</text>
+<text text-anchor="start" x="1042.5" y="-507.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="906.5" y="-489.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#0e7c86">FK</text>
+<text text-anchor="start" x="928.5" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00">policy_id</text>
+<text text-anchor="start" x="1042.5" y="-488.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="911.5" y="-469" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="928.5" y="-469" font-family="Helvetica,sans-Serif" font-size="10.00">start_date</text>
+<text text-anchor="start" x="1034.5" y="-469.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DATE</text>
+<text text-anchor="start" x="911.5" y="-450" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="928.5" y="-450" font-family="Helvetica,sans-Serif" font-size="10.00">end_date</text>
+<text text-anchor="start" x="1034.5" y="-450.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DATE</text>
+<text text-anchor="start" x="911.5" y="-431" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="928.5" y="-431" font-family="Helvetica,sans-Serif" font-size="10.00">status</text>
+<text text-anchor="start" x="1030.5" y="-431.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#0e7c86" d="M913.5,-423.5C913.5,-423.5 1051.5,-423.5 1051.5,-423.5 1057.5,-423.5 1063.5,-429.5 1063.5,-435.5 1063.5,-435.5 1063.5,-548.5 1063.5,-548.5 1063.5,-554.5 1057.5,-560.5 1051.5,-560.5 1051.5,-560.5 913.5,-560.5 913.5,-560.5 907.5,-560.5 901.5,-554.5 901.5,-548.5 901.5,-548.5 901.5,-435.5 901.5,-435.5 901.5,-429.5 907.5,-423.5 913.5,-423.5"/>
+</g>
+<!-- Customers&#45;&gt;Customer_Policies -->
+<g id="edge9" class="edge">
+<title>Customers:customer_id_r&#45;&gt;Customer_Policies:customer_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M621.16,-90.86C720.31,-87.52 773.27,-25.02 848,-94 912.47,-153.52 820.37,-469.65 887.11,-506.5"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="613.87,-94.99 613.73,-86.99 615.33,-86.96 615.47,-94.96 613.87,-94.99"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="613,-91 617,-90.93 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="617.87,-94.92 617.73,-86.92 619.33,-86.89 619.47,-94.89 617.87,-94.92"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="617,-90.93 621,-90.86 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="893.73,-508.11 900.65,-513.5 897.61,-509.05 901.5,-510 901.5,-510 901.5,-510 897.61,-509.05 902.35,-506.5 893.73,-508.11 893.73,-508.11"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="890.62" cy="-507.35" rx="3.2" ry="3.2"/>
+</g>
+<!-- Beneficiaries -->
+<g id="node12" class="node">
+<title>Beneficiaries</title>
+<path fill="white" stroke="transparent" d="M900,-583C900,-583 1065,-583 1065,-583 1071,-583 1077,-589 1077,-595 1077,-595 1077,-689 1077,-689 1077,-695 1071,-701 1065,-701 1065,-701 900,-701 900,-701 894,-701 888,-695 888,-689 888,-689 888,-595 888,-595 888,-589 894,-583 900,-583"/>
+<polygon fill="#0e7c86" stroke="transparent" points="889.5,-679 889.5,-700 1076.5,-700 1076.5,-679 889.5,-679"/>
+<text text-anchor="start" x="893.5" y="-687.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Beneficiaries</text>
+<text text-anchor="start" x="893.5" y="-668.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="915.5" y="-668" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">beneficiary_id</text>
+<text text-anchor="start" x="1056.5" y="-667.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="893.5" y="-649.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#0e7c86">FK</text>
+<text text-anchor="start" x="915.5" y="-648" font-family="Helvetica,sans-Serif" font-size="10.00">customer_id</text>
+<text text-anchor="start" x="1056.5" y="-648.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="893.5" y="-630.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#0e7c86">FK</text>
+<text text-anchor="start" x="915.5" y="-629" font-family="Helvetica,sans-Serif" font-size="10.00">policy_id</text>
+<text text-anchor="start" x="1056.5" y="-629.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="898.5" y="-610" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="915.5" y="-610" font-family="Helvetica,sans-Serif" font-size="10.00">full_name</text>
+<text text-anchor="start" x="1004.5" y="-610.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(100)</text>
+<text text-anchor="start" x="898.5" y="-591" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="915.5" y="-591" font-family="Helvetica,sans-Serif" font-size="10.00">relationship</text>
+<text text-anchor="start" x="1044.5" y="-591.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#0e7c86" d="M900,-583C900,-583 1065,-583 1065,-583 1071,-583 1077,-589 1077,-595 1077,-595 1077,-689 1077,-689 1077,-695 1071,-701 1065,-701 1065,-701 900,-701 900,-701 894,-701 888,-695 888,-689 888,-689 888,-595 888,-595 888,-589 894,-583 900,-583"/>
+</g>
+<!-- Customers&#45;&gt;Beneficiaries -->
+<g id="edge5" class="edge">
+<title>Customers:customer_id_r&#45;&gt;Beneficiaries:customer_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M621.2,-91.35C666.22,-94.33 831.61,-115.62 848,-134 883.27,-173.57 839.16,-577.85 876.73,-642.35"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="613.63,-95.03 613.97,-87.04 615.57,-87.11 615.23,-95.1 613.63,-95.03"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="613,-91 617,-91.17 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="617.62,-95.2 617.97,-87.21 619.57,-87.28 619.22,-95.27 617.62,-95.2"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="617,-91.17 620.99,-91.34 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="882.05,-646.26 886.37,-653.9 885.28,-648.63 888.5,-651 888.5,-651 888.5,-651 885.28,-648.63 890.63,-648.1 882.05,-646.26 882.05,-646.26"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="879.48" cy="-644.37" rx="3.2" ry="3.2"/>
+</g>
+<!-- Agents&#45;&gt;Agent_Customers -->
+<g id="edge1" class="edge">
+<title>Agents:agent_id_r&#45;&gt;Agent_Customers:agent_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M625.17,-332.28C638.93,-329.7 645.31,-320.88 656.95,-316.5"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="618.15,-336.91 617.44,-328.95 619.04,-328.8 619.74,-336.77 618.15,-336.91"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="617,-333 620.98,-332.65 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="622.13,-336.56 621.43,-328.59 623.02,-328.45 623.73,-336.42 622.13,-336.56"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="620.98,-332.65 624.97,-332.3 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="663.62,-315.36 672.11,-317.55 667.56,-314.68 671.5,-314 671.5,-314 671.5,-314 667.56,-314.68 670.89,-310.45 663.62,-315.36 663.62,-315.36"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="660.46" cy="-315.9" rx="3.2" ry="3.2"/>
+</g>
+<!-- Insurance_Policies -->
+<g id="node10" class="node">
+<title>Insurance_Policies</title>
+<path fill="white" stroke="transparent" d="M687.5,-464C687.5,-464 817.5,-464 817.5,-464 823.5,-464 829.5,-470 829.5,-476 829.5,-476 829.5,-608 829.5,-608 829.5,-614 823.5,-620 817.5,-620 817.5,-620 687.5,-620 687.5,-620 681.5,-620 675.5,-614 675.5,-608 675.5,-608 675.5,-476 675.5,-476 675.5,-470 681.5,-464 687.5,-464"/>
+<polygon fill="#0e7c86" stroke="transparent" points="676.5,-598 676.5,-619 828.5,-619 828.5,-598 676.5,-598"/>
+<text text-anchor="start" x="680.5" y="-606.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Insurance_Policies</text>
+<text text-anchor="start" x="680.5" y="-587.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="702.5" y="-587" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">policy_id</text>
+<text text-anchor="start" x="808.5" y="-586.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="680.5" y="-568.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#0e7c86">FK</text>
+<text text-anchor="start" x="702.5" y="-567" font-family="Helvetica,sans-Serif" font-size="10.00">policy_type_id</text>
+<text text-anchor="start" x="808.5" y="-567.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="680.5" y="-549.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#0e7c86">FK</text>
+<text text-anchor="start" x="702.5" y="-548" font-family="Helvetica,sans-Serif" font-size="10.00">agent_id</text>
+<text text-anchor="start" x="808.5" y="-548.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="685.5" y="-529" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="702.5" y="-529" font-family="Helvetica,sans-Serif" font-size="10.00">policy_amount</text>
+<text text-anchor="start" x="783.5" y="-529.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DECIMAL</text>
+<text text-anchor="start" x="685.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="702.5" y="-510" font-family="Helvetica,sans-Serif" font-size="10.00">start_date</text>
+<text text-anchor="start" x="800.5" y="-510.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DATE</text>
+<text text-anchor="start" x="685.5" y="-491" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="702.5" y="-491" font-family="Helvetica,sans-Serif" font-size="10.00">end_date</text>
+<text text-anchor="start" x="800.5" y="-491.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DATE</text>
+<text text-anchor="start" x="685.5" y="-472" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="702.5" y="-472" font-family="Helvetica,sans-Serif" font-size="10.00">status</text>
+<text text-anchor="start" x="796.5" y="-472.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#0e7c86" d="M687.5,-464C687.5,-464 817.5,-464 817.5,-464 823.5,-464 829.5,-470 829.5,-476 829.5,-476 829.5,-608 829.5,-608 829.5,-614 823.5,-620 817.5,-620 817.5,-620 687.5,-620 687.5,-620 681.5,-620 675.5,-614 675.5,-608 675.5,-608 675.5,-476 675.5,-476 675.5,-470 681.5,-464 687.5,-464"/>
+</g>
+<!-- Agents&#45;&gt;Insurance_Policies -->
+<g id="edge14" class="edge">
+<title>Agents:agent_id_r&#45;&gt;Insurance_Policies:agent_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M625.2,-333.55C704.44,-344.9 592.28,-528.35 661.07,-549.1"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="617.53,-337.04 618.07,-329.06 619.66,-329.17 619.13,-337.15 617.53,-337.04"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="617,-333 620.99,-333.27 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="621.52,-337.31 622.06,-329.33 623.65,-329.44 623.12,-337.42 621.52,-337.31"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="620.99,-333.27 624.98,-333.54 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="667.57,-549.95 675.03,-554.57 671.53,-550.48 675.5,-551 675.5,-551 675.5,-551 671.53,-550.48 675.97,-547.43 667.57,-549.95 667.57,-549.95"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="664.4" cy="-549.53" rx="3.2" ry="3.2"/>
+</g>
+<!-- Branches -->
+<g id="node5" class="node">
+<title>Branches</title>
+<path fill="white" stroke="transparent" d="M208,-236C208,-236 371,-236 371,-236 377,-236 383,-242 383,-248 383,-248 383,-304 383,-304 383,-310 377,-316 371,-316 371,-316 208,-316 208,-316 202,-316 196,-310 196,-304 196,-304 196,-248 196,-248 196,-242 202,-236 208,-236"/>
+<polygon fill="#2f6db5" stroke="transparent" points="197.5,-294 197.5,-315 382.5,-315 382.5,-294 197.5,-294"/>
+<text text-anchor="start" x="201.5" y="-302.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Branches</text>
+<text text-anchor="start" x="201.5" y="-283.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="223.5" y="-283" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">branch_id</text>
+<text text-anchor="start" x="362.5" y="-282.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="206.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="223.5" y="-263" font-family="Helvetica,sans-Serif" font-size="10.00">location_name</text>
+<text text-anchor="start" x="310.5" y="-263.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(100)</text>
+<text text-anchor="start" x="206.5" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="223.5" y="-244" font-family="Helvetica,sans-Serif" font-size="10.00">contact_number</text>
+<text text-anchor="start" x="316.5" y="-244.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(15)</text>
+<path fill="none" stroke="#2f6db5" d="M208,-236C208,-236 371,-236 371,-236 377,-236 383,-242 383,-248 383,-248 383,-304 383,-304 383,-310 377,-316 371,-316 371,-316 208,-316 208,-316 202,-316 196,-310 196,-304 196,-304 196,-248 196,-248 196,-242 202,-236 208,-236"/>
+</g>
+<!-- Branches&#45;&gt;Agents -->
+<g id="edge4" class="edge">
+<title>Branches:branch_id_r&#45;&gt;Agents:branch_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M391.33,-284.57C404.31,-283.16 411.34,-278.66 422.61,-276.37"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="384.01,-288.95 383.59,-280.96 385.19,-280.88 385.6,-288.87 384.01,-288.95"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="383,-285 386.99,-284.79 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="388,-288.75 387.59,-280.76 389.19,-280.68 389.6,-288.66 388,-288.75"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="386.99,-284.79 390.99,-284.59 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="429.04,-275.76 437.34,-278.58 433.02,-275.38 437,-275 437,-275 437,-275 433.02,-275.38 436.66,-271.42 429.04,-275.76 429.04,-275.76"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="425.85" cy="-276.06" rx="3.2" ry="3.2"/>
+</g>
+<!-- Policy_Types -->
+<g id="node9" class="node">
+<title>Policy_Types</title>
+<path fill="white" stroke="transparent" d="M464,-541.5C464,-541.5 590,-541.5 590,-541.5 596,-541.5 602,-547.5 602,-553.5 602,-553.5 602,-590.5 602,-590.5 602,-596.5 596,-602.5 590,-602.5 590,-602.5 464,-602.5 464,-602.5 458,-602.5 452,-596.5 452,-590.5 452,-590.5 452,-553.5 452,-553.5 452,-547.5 458,-541.5 464,-541.5"/>
+<polygon fill="#0e7c86" stroke="transparent" points="453,-580 453,-601 601,-601 601,-580 453,-580"/>
+<text text-anchor="start" x="457" y="-588.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Policy_Types</text>
+<text text-anchor="start" x="457" y="-569.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="479" y="-569" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">policy_type_id</text>
+<text text-anchor="start" x="581" y="-568.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="457" y="-550.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="479" y="-549" font-family="Helvetica,sans-Serif" font-size="10.00">policy_type</text>
+<text text-anchor="start" x="569" y="-549.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#0e7c86" d="M464,-541.5C464,-541.5 590,-541.5 590,-541.5 596,-541.5 602,-547.5 602,-553.5 602,-553.5 602,-590.5 602,-590.5 602,-596.5 596,-602.5 590,-602.5 590,-602.5 464,-602.5 464,-602.5 458,-602.5 452,-596.5 452,-590.5 452,-590.5 452,-553.5 452,-553.5 452,-547.5 458,-541.5 464,-541.5"/>
+</g>
+<!-- Policy_Types&#45;&gt;Insurance_Policies -->
+<g id="edge13" class="edge">
+<title>Policy_Types:policy_type_id_r&#45;&gt;Insurance_Policies:policy_type_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M610.25,-570C631.54,-570 641.74,-570 660.95,-570"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="602.8,-574 602.8,-566 604.4,-566 604.4,-574 602.8,-574"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="602,-570 606,-570 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="606.8,-574 606.8,-566 608.4,-566 608.4,-574 606.8,-574"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="606,-570 610,-570 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="667.5,-570 675.5,-573.6 671.5,-570 675.5,-570 675.5,-570 675.5,-570 671.5,-570 675.5,-566.4 667.5,-570 667.5,-570"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="664.3" cy="-570" rx="3.2" ry="3.2"/>
+</g>
+<!-- Insurance_Policies&#45;&gt;Customer_Policies -->
+<g id="edge10" class="edge">
+<title>Insurance_Policies:policy_id_r&#45;&gt;Customer_Policies:policy_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M837.64,-588.14C875.5,-579.53 855.78,-508.41 887.35,-492.96"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="830.71,-592.89 829.88,-584.94 831.47,-584.77 832.31,-592.73 830.71,-592.89"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="829.5,-589 833.48,-588.58 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="834.69,-592.48 833.86,-584.52 835.45,-584.35 836.28,-592.31 834.69,-592.48"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="833.48,-588.58 837.46,-588.16 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="893.67,-491.64 902.24,-493.52 897.58,-490.82 901.5,-490 901.5,-490 901.5,-490 897.58,-490.82 900.76,-486.48 893.67,-491.64 893.67,-491.64"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="890.54" cy="-492.29" rx="3.2" ry="3.2"/>
+</g>
+<!-- Insurance_Policies&#45;&gt;Beneficiaries -->
+<g id="edge6" class="edge">
+<title>Insurance_Policies:policy_id_r&#45;&gt;Beneficiaries:policy_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M837.62,-590.04C856.44,-595.24 859.03,-618.59 874.52,-627.52"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="829.79,-593.07 830.8,-585.13 832.39,-585.34 831.37,-593.27 829.79,-593.07"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="829.5,-589 833.47,-589.51 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="833.75,-593.58 834.77,-585.64 836.36,-585.84 835.34,-593.78 833.75,-593.58"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="833.47,-589.51 837.44,-590.01 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="880.74,-629.07 887.63,-634.49 884.62,-630.03 888.5,-631 888.5,-631 888.5,-631 884.62,-630.03 889.37,-627.51 880.74,-629.07 880.74,-629.07"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="877.63" cy="-628.29" rx="3.2" ry="3.2"/>
+</g>
+<!-- Claims -->
+<g id="node16" class="node">
+<title>Claims</title>
+<path fill="white" stroke="transparent" d="M915.5,-759C915.5,-759 1049.5,-759 1049.5,-759 1055.5,-759 1061.5,-765 1061.5,-771 1061.5,-771 1061.5,-865 1061.5,-865 1061.5,-871 1055.5,-877 1049.5,-877 1049.5,-877 915.5,-877 915.5,-877 909.5,-877 903.5,-871 903.5,-865 903.5,-865 903.5,-771 903.5,-771 903.5,-765 909.5,-759 915.5,-759"/>
+<polygon fill="#b4610f" stroke="transparent" points="904.5,-855 904.5,-876 1060.5,-876 1060.5,-855 904.5,-855"/>
+<text text-anchor="start" x="908.5" y="-863.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Claims</text>
+<text text-anchor="start" x="908.5" y="-844.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="930.5" y="-844" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">claim_id</text>
+<text text-anchor="start" x="1040.5" y="-843.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="908.5" y="-825.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b4610f">FK</text>
+<text text-anchor="start" x="930.5" y="-824" font-family="Helvetica,sans-Serif" font-size="10.00">policy_id</text>
+<text text-anchor="start" x="1040.5" y="-824.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="908.5" y="-806.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b4610f">FK</text>
+<text text-anchor="start" x="930.5" y="-805" font-family="Helvetica,sans-Serif" font-size="10.00">claim_status_id</text>
+<text text-anchor="start" x="1040.5" y="-805.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="913.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="930.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">claim_amount</text>
+<text text-anchor="start" x="1015.5" y="-786.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DECIMAL</text>
+<text text-anchor="start" x="913.5" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="930.5" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00">claim_date</text>
+<text text-anchor="start" x="1032.5" y="-767.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DATE</text>
+<path fill="none" stroke="#b4610f" d="M915.5,-759C915.5,-759 1049.5,-759 1049.5,-759 1055.5,-759 1061.5,-765 1061.5,-771 1061.5,-771 1061.5,-865 1061.5,-865 1061.5,-871 1055.5,-877 1049.5,-877 1049.5,-877 915.5,-877 915.5,-877 909.5,-877 903.5,-871 903.5,-865 903.5,-865 903.5,-771 903.5,-771 903.5,-765 909.5,-759 915.5,-759"/>
+</g>
+<!-- Insurance_Policies&#45;&gt;Claims -->
+<g id="edge7" class="edge">
+<title>Insurance_Policies:policy_id_r&#45;&gt;Claims:policy_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M837.73,-589.49C927.85,-600.78 808.97,-804.64 888.9,-825.31"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="830.06,-593.04 830.54,-585.05 832.13,-585.15 831.66,-593.13 830.06,-593.04"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="829.5,-589 833.49,-589.24 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="834.06,-593.28 834.53,-585.29 836.13,-585.39 835.65,-593.37 834.06,-593.28"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="833.49,-589.24 837.49,-589.47 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="895.55,-826.08 903.09,-830.58 899.53,-826.54 903.5,-827 903.5,-827 903.5,-827 899.53,-826.54 903.91,-823.42 895.55,-826.08 895.55,-826.08"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="892.37" cy="-825.71" rx="3.2" ry="3.2"/>
+</g>
+<!-- Payments -->
+<g id="node14" class="node">
+<title>Payments</title>
+<path fill="white" stroke="transparent" d="M1143,-227.5C1143,-227.5 1322,-227.5 1322,-227.5 1328,-227.5 1334,-233.5 1334,-239.5 1334,-239.5 1334,-352.5 1334,-352.5 1334,-358.5 1328,-364.5 1322,-364.5 1322,-364.5 1143,-364.5 1143,-364.5 1137,-364.5 1131,-358.5 1131,-352.5 1131,-352.5 1131,-239.5 1131,-239.5 1131,-233.5 1137,-227.5 1143,-227.5"/>
+<polygon fill="#6a46c2" stroke="transparent" points="1132.5,-342 1132.5,-363 1333.5,-363 1333.5,-342 1132.5,-342"/>
+<text text-anchor="start" x="1136.5" y="-350.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Payments</text>
+<text text-anchor="start" x="1136.5" y="-331.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="1158.5" y="-331" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">payment_id</text>
+<text text-anchor="start" x="1313.5" y="-330.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="1136.5" y="-312.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#6a46c2">FK</text>
+<text text-anchor="start" x="1158.5" y="-311" font-family="Helvetica,sans-Serif" font-size="10.00">policy_holder_id</text>
+<text text-anchor="start" x="1313.5" y="-311.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="1141.5" y="-292" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1158.5" y="-292" font-family="Helvetica,sans-Serif" font-size="10.00">amount_paid</text>
+<text text-anchor="start" x="1288.5" y="-292.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DECIMAL</text>
+<text text-anchor="start" x="1141.5" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1158.5" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00">payment_date</text>
+<text text-anchor="start" x="1305.5" y="-273.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">DATE</text>
+<text text-anchor="start" x="1136.5" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#6a46c2">FK</text>
+<text text-anchor="start" x="1158.5" y="-254" font-family="Helvetica,sans-Serif" font-size="10.00">payment_method_id</text>
+<text text-anchor="start" x="1313.5" y="-254.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="1136.5" y="-236.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="1158.5" y="-235" font-family="Helvetica,sans-Serif" font-size="10.00">transaction_id</text>
+<text text-anchor="start" x="1267.5" y="-235.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(50)</text>
+<path fill="none" stroke="#6a46c2" d="M1143,-227.5C1143,-227.5 1322,-227.5 1322,-227.5 1328,-227.5 1334,-233.5 1334,-239.5 1334,-239.5 1334,-352.5 1334,-352.5 1334,-358.5 1328,-364.5 1322,-364.5 1322,-364.5 1143,-364.5 1143,-364.5 1137,-364.5 1131,-358.5 1131,-352.5 1131,-352.5 1131,-239.5 1131,-239.5 1131,-233.5 1137,-227.5 1143,-227.5"/>
+</g>
+<!-- Customer_Policies&#45;&gt;Payments -->
+<g id="edge16" class="edge">
+<title>Customer_Policies:policy_holder_id_r&#45;&gt;Payments:policy_holder_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M1071.72,-528.46C1151.38,-517.26 1047.37,-336.34 1117,-315.88"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1064.56,-532.94 1064.03,-524.96 1065.63,-524.85 1066.16,-532.83 1064.56,-532.94"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="1063.5,-529 1067.49,-528.74 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1068.55,-532.68 1068.03,-524.69 1069.62,-524.59 1070.15,-532.57 1068.55,-532.68"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="1067.49,-528.74 1071.48,-528.47 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1123.57,-315.03 1131.96,-317.57 1127.53,-314.51 1131.5,-314 1131.5,-314 1131.5,-314 1127.53,-314.51 1131.04,-310.43 1123.57,-315.03 1123.57,-315.03"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="1120.39" cy="-315.44" rx="3.2" ry="3.2"/>
+</g>
+<!-- Payment_Methods -->
+<g id="node13" class="node">
+<title>Payment_Methods</title>
+<path fill="white" stroke="transparent" d="M903,-227.5C903,-227.5 1062,-227.5 1062,-227.5 1068,-227.5 1074,-233.5 1074,-239.5 1074,-239.5 1074,-276.5 1074,-276.5 1074,-282.5 1068,-288.5 1062,-288.5 1062,-288.5 903,-288.5 903,-288.5 897,-288.5 891,-282.5 891,-276.5 891,-276.5 891,-239.5 891,-239.5 891,-233.5 897,-227.5 903,-227.5"/>
+<polygon fill="#6a46c2" stroke="transparent" points="892.5,-266 892.5,-287 1073.5,-287 1073.5,-266 892.5,-266"/>
+<text text-anchor="start" x="896.5" y="-274.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Payment_Methods</text>
+<text text-anchor="start" x="896.5" y="-255.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="918.5" y="-255" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">payment_method_id</text>
+<text text-anchor="start" x="1053.5" y="-254.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="896.5" y="-236.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="918.5" y="-235" font-family="Helvetica,sans-Serif" font-size="10.00">payment_method</text>
+<text text-anchor="start" x="1041.5" y="-235.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#6a46c2" d="M903,-227.5C903,-227.5 1062,-227.5 1062,-227.5 1068,-227.5 1074,-233.5 1074,-239.5 1074,-239.5 1074,-276.5 1074,-276.5 1074,-282.5 1068,-288.5 1062,-288.5 1062,-288.5 903,-288.5 903,-288.5 897,-288.5 891,-282.5 891,-276.5 891,-276.5 891,-239.5 891,-239.5 891,-233.5 897,-227.5 903,-227.5"/>
+</g>
+<!-- Payment_Methods&#45;&gt;Payments -->
+<g id="edge17" class="edge">
+<title>Payment_Methods:payment_method_id_r&#45;&gt;Payments:payment_method_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M1082.68,-256C1096.86,-256 1104.65,-256 1117.09,-256"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1075.3,-260 1075.3,-252 1076.9,-252 1076.9,-260 1075.3,-260"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="1074.5,-256 1078.5,-256 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1079.3,-260 1079.3,-252 1080.9,-252 1080.9,-260 1079.3,-260"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="1078.5,-256 1082.5,-256 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1123.5,-256 1131.5,-259.6 1127.5,-256 1131.5,-256 1131.5,-256 1131.5,-256 1127.5,-256 1131.5,-252.4 1123.5,-256 1123.5,-256"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="1120.3" cy="-256" rx="3.2" ry="3.2"/>
+</g>
+<!-- Claim_Statuses -->
+<g id="node15" class="node">
+<title>Claim_Statuses</title>
+<path fill="white" stroke="transparent" d="M686.5,-778.5C686.5,-778.5 818.5,-778.5 818.5,-778.5 824.5,-778.5 830.5,-784.5 830.5,-790.5 830.5,-790.5 830.5,-827.5 830.5,-827.5 830.5,-833.5 824.5,-839.5 818.5,-839.5 818.5,-839.5 686.5,-839.5 686.5,-839.5 680.5,-839.5 674.5,-833.5 674.5,-827.5 674.5,-827.5 674.5,-790.5 674.5,-790.5 674.5,-784.5 680.5,-778.5 686.5,-778.5"/>
+<polygon fill="#b4610f" stroke="transparent" points="675.5,-817 675.5,-838 829.5,-838 829.5,-817 675.5,-817"/>
+<text text-anchor="start" x="679.5" y="-825.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Claim_Statuses</text>
+<text text-anchor="start" x="679.5" y="-806.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="701.5" y="-806" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">claim_status_id</text>
+<text text-anchor="start" x="809.5" y="-805.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="679.5" y="-787.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#8a94a6">UQ</text>
+<text text-anchor="start" x="701.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">claim_status</text>
+<text text-anchor="start" x="797.5" y="-786.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<path fill="none" stroke="#b4610f" d="M686.5,-778.5C686.5,-778.5 818.5,-778.5 818.5,-778.5 824.5,-778.5 830.5,-784.5 830.5,-790.5 830.5,-790.5 830.5,-827.5 830.5,-827.5 830.5,-833.5 824.5,-839.5 818.5,-839.5 818.5,-839.5 686.5,-839.5 686.5,-839.5 680.5,-839.5 674.5,-833.5 674.5,-827.5 674.5,-827.5 674.5,-790.5 674.5,-790.5 674.5,-784.5 680.5,-778.5 686.5,-778.5"/>
+</g>
+<!-- Claim_Statuses&#45;&gt;Claims -->
+<g id="edge8" class="edge">
+<title>Claim_Statuses:claim_status_id_r&#45;&gt;Claims:claim_status_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M838.69,-807C859.84,-807 869.97,-807 889.05,-807"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="831.3,-811 831.3,-803 832.9,-803 832.9,-811 831.3,-811"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="830.5,-807 834.5,-807 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="835.3,-811 835.3,-803 836.9,-803 836.9,-811 835.3,-811"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="834.5,-807 838.5,-807 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="895.5,-807 903.5,-810.6 899.5,-807 903.5,-807 903.5,-807 903.5,-807 899.5,-807 903.5,-803.4 895.5,-807 895.5,-807"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="892.3" cy="-807" rx="3.2" ry="3.2"/>
+</g>
+<!-- Policy_Claims_Documents -->
+<g id="node17" class="node">
+<title>Policy_Claims_Documents</title>
+<path fill="white" stroke="transparent" d="M1152.5,-759C1152.5,-759 1312.5,-759 1312.5,-759 1318.5,-759 1324.5,-765 1324.5,-771 1324.5,-771 1324.5,-865 1324.5,-865 1324.5,-871 1318.5,-877 1312.5,-877 1312.5,-877 1152.5,-877 1152.5,-877 1146.5,-877 1140.5,-871 1140.5,-865 1140.5,-865 1140.5,-771 1140.5,-771 1140.5,-765 1146.5,-759 1152.5,-759"/>
+<polygon fill="#b4610f" stroke="transparent" points="1141.5,-855 1141.5,-876 1323.5,-876 1323.5,-855 1141.5,-855"/>
+<text text-anchor="start" x="1145.5" y="-863.4" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="12.00" fill="white">Policy_Claims_Documents</text>
+<text text-anchor="start" x="1145.5" y="-844.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b7791f">PK</text>
+<text text-anchor="start" x="1167.5" y="-844" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">document_id</text>
+<text text-anchor="start" x="1303.5" y="-843.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="1145.5" y="-825.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="8.00" fill="#b4610f">FK</text>
+<text text-anchor="start" x="1167.5" y="-824" font-family="Helvetica,sans-Serif" font-size="10.00">claim_id</text>
+<text text-anchor="start" x="1303.5" y="-824.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">INT</text>
+<text text-anchor="start" x="1150.5" y="-805" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1167.5" y="-805" font-family="Helvetica,sans-Serif" font-size="10.00">document_type</text>
+<text text-anchor="start" x="1291.5" y="-805.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">ENUM</text>
+<text text-anchor="start" x="1150.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1167.5" y="-786" font-family="Helvetica,sans-Serif" font-size="10.00">document_url</text>
+<text text-anchor="start" x="1251.5" y="-786.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">VARCHAR(255)</text>
+<text text-anchor="start" x="1150.5" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1167.5" y="-767" font-family="Helvetica,sans-Serif" font-size="10.00">uploaded_at</text>
+<text text-anchor="start" x="1267.5" y="-767.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#8a94a6">TIMESTAMP</text>
+<path fill="none" stroke="#b4610f" d="M1152.5,-759C1152.5,-759 1312.5,-759 1312.5,-759 1318.5,-759 1324.5,-765 1324.5,-771 1324.5,-771 1324.5,-865 1324.5,-865 1324.5,-871 1318.5,-877 1312.5,-877 1312.5,-877 1152.5,-877 1152.5,-877 1146.5,-877 1140.5,-871 1140.5,-865 1140.5,-865 1140.5,-771 1140.5,-771 1140.5,-765 1146.5,-759 1152.5,-759"/>
+</g>
+<!-- Claims&#45;&gt;Policy_Claims_Documents -->
+<g id="edge18" class="edge">
+<title>Claims:claim_id_r&#45;&gt;Policy_Claims_Documents:claim_id_l</title>
+<path fill="none" stroke="#7b8698" stroke-width="1.2" d="M1069.83,-845.64C1094.15,-843.44 1104.03,-831.89 1125.98,-828.16"/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1062.47,-849.96 1062.13,-841.97 1063.72,-841.9 1064.07,-849.89 1062.47,-849.96"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="1061.5,-846 1065.5,-845.83 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1066.47,-849.79 1066.12,-841.79 1067.72,-841.73 1068.07,-849.72 1066.47,-849.79"/>
+<polyline fill="none" stroke="#7b8698" stroke-width="1.2" points="1065.5,-845.83 1069.49,-845.65 "/>
+<polygon fill="#7b8698" stroke="#7b8698" stroke-width="1.2" points="1132.53,-827.64 1140.79,-830.59 1136.51,-827.32 1140.5,-827 1140.5,-827 1140.5,-827 1136.51,-827.32 1140.21,-823.41 1132.53,-827.64 1132.53,-827.64"/>
+<ellipse fill="none" stroke="#7b8698" stroke-width="1.2" cx="1129.34" cy="-827.89" rx="3.2" ry="3.2"/>
+</g>
+</g>
+</svg>
